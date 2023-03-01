@@ -240,7 +240,7 @@ func (j *StatsNotifyJob) getClientUsage(id string) string {
 	} else {
 		total = fmt.Sprintf("%s", common.FormatTraffic((traffic.Total)))
 	}
-	output := fmt.Sprintf("💡 Active: %t\r\n📧 Email: %s\r\n🔼 Download↑: %s\r\n🔽 Upload↓: %s\r\n🔄 Total: %s / %s\r\n📅 Expire in: %s\r\n",
+	output := fmt.Sprintf("💡 وضعیت: %t\r\n📧 نام کاربری: %s\r\n🔼 آپلود↑: %s\r\n🔽 دانلود↓: %s\r\n🔄 ترافیک کل: %s / %s\r\n📅 انقضای حساب کاربری: %s\r\n\n برای دریافت کانفیگ خود به ادرس زیر مراجعه کنید: \r\n https://shima.babacle.live/login",
 		traffic.Enable, traffic.Email, common.FormatTraffic(traffic.Up), common.FormatTraffic(traffic.Down), common.FormatTraffic((traffic.Up + traffic.Down)),
 		total, expiryTime)
 
