@@ -1227,7 +1227,7 @@ class Inbound extends XrayCommonClass {
         return url.toString();
     }
 
-    genLink(address='', remark='') {
+    genLink(address='', remark='', clientIndex=0) {
         switch (this.protocol) {
             case Protocols.VMESS:
                 if (this.settings.vmesses[clientIndex].email != ""){
