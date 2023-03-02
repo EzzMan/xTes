@@ -12,7 +12,7 @@ xray panel supporting multi-protocol, **Multi-lang (English,Farsi,Chinese)**
 # Install & Upgrade
 
 ```
-bash <(curl -Ls bash <(curl -Ls https://raw.githubusercontent.com/EzzMan/xTes/main/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/EzzMan/xTes/main/install.sh)
 ```
 
 # SSL
