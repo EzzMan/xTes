@@ -79,18 +79,18 @@ const TLS_CIPHER_OPTION = {
     ECDHE_RSA_CHACHA20_POLY1305: "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
 };
 
-// const UTLS_FINGERPRINT = {
-//     UTLS_CHROME: "chrome",
-//     UTLS_FIREFOX: "firefox",
-//     UTLS_SAFARI: "safari",
-//     UTLS_IOS: "ios",
-//     UTLS_android: "android",
-//     UTLS_EDGE: "edge",
-//     UTLS_360: "360",
-//     UTLS_QQ: "qq",
-//     UTLS_RANDOM: "random",
-//     UTLS_RANDOMIZED: "randomized",
-// };
+const UTLS_FINGERPRINT = {
+    UTLS_CHROME: "chrome",
+    UTLS_FIREFOX: "firefox",
+    UTLS_SAFARI: "safari",
+    UTLS_IOS: "ios",
+    UTLS_android: "android",
+    UTLS_EDGE: "edge",
+    UTLS_360: "360",
+    UTLS_QQ: "qq",
+    UTLS_RANDOM: "random",
+    UTLS_RANDOMIZED: "randomized",
+};
 
 Object.freeze(Protocols);
 Object.freeze(VmessMethods);
@@ -101,7 +101,7 @@ Object.freeze(XTLS_FLOW_CONTROL);
 Object.freeze(TLS_FLOW_CONTROL);
 Object.freeze(TLS_VERSION_OPTION);
 Object.freeze(TLS_CIPHER_OPTION);
-// Object.freeze(UTLS_FINGERPRINT);
+Object.freeze(UTLS_FINGERPRINT);
 
 class XrayCommonClass {
 
