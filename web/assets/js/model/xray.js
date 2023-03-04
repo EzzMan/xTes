@@ -1461,14 +1461,13 @@ Inbound.VLESSSettings = class extends Inbound.Settings {
 };
 Inbound.VLESSSettings.VLESS = class extends XrayCommonClass {
 
-    constructor(id=RandomUtil.randomUUID(), flow='', email=RandomUtil.randomText(),limitIp=0, totalGB=0, fingerprint = UTLS_FINGERPRINT.UTLS_CHROME, expiryTime='') {
+    constructor(id=RandomUtil.randomUUID(), flow='', email=RandomUtil.randomText(),limitIp=0, totalGB=0, expiryTime='') {
         super();
         this.id = id;
         this.flow = flow;
         this.email = email;
         this.limitIp = limitIp;
         this.totalGB = totalGB;
-        this.fingerprint = fingerprint;
         this.expiryTime = expiryTime;
 
     }
@@ -1480,7 +1479,6 @@ Inbound.VLESSSettings.VLESS = class extends XrayCommonClass {
             json.email,
             json.limitIp,
             json.totalGB,
-            json.fingerprint,
             json.expiryTime,
 
         );
